@@ -1,0 +1,58 @@
+.background-intial-div{
+    height: 100vh;
+    min-height: 44rem;
+    background-image: url("../img/bg-principal.jpg");
+    background-size: cover;
+}
+
+.gradient-background-div{
+    display: flex;
+    height: 100vh;
+    min-height: 44rem;
+    background-image: linear-gradient(to right, rgba(255,255,255,1) 40%, rgba(255,255,255,.7) 64%, rgba(255,255,255,.4) 86%, rgba(255,255,255,0) 100%);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 94%;
+    max-width: 67rem;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+.container-text h1{
+    color: #d9a156;
+    font-size: 55px;
+}
+
+.container-text p{
+    color: #898989;
+    width: 100%;
+    max-width: 22rem;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.container-text hr{
+    margin: 2rem 0;
+    width: 100%;
+    border: 2px solid #d9a156;
+    max-width: 13rem;
+}
+
+.placa-carro{
+    margin-top: 2rem;
+}
+
+.placa-carro img {
+    max-width: 100%;
+    height: auto;
+}

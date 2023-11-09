@@ -1,0 +1,111 @@
+@media (max-width: 780px) {
+    .nav-bar{
+        justify-content: space-between;
+    }
+
+    .nav-link{
+        color: #898989;
+    }
+
+    .icon {
+      display: block;
+      z-index: 1;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #f9f9f9;
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
+  
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
+    }
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+    }
+  
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.16s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.32s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.48s;
+    }
+
+    .nav-list li:nth-child(4) a {
+        transition: 0.5s 0.64s;
+    }
+
+    .nav-list li:nth-child(5) a {
+        transition: 0.5s 0.80s;
+    }
+
+    .nav-list li:nth-child(6) a {
+        transition: 0.5s 0.96s;
+    }
+    
+     
+  
+    /* Estilos ativos */
+  
+    .nav-bar.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav-bar.active .nav-list a {
+      opacity: 1;
+    }
+
+    .sobrenos-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* servicos */
+
+    .servicos-content{
+        flex-direction: column;
+    }
+
+    .servicos-content-carrousel{
+        order: 2;
+    }
+
+    /* politica-certificados */
+
+    .politica-certificados-content{
+        flex-direction: column;
+    }
+
+    /* agendamento */
+
+    .agendamento-content{
+        flex-direction: column;
+    }
+
+    /* footer */
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer-contatos-content{
+        flex-direction: column;
+    }
+}

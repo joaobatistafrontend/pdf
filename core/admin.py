@@ -1,3 +1,14 @@
 from django.contrib import admin
+from .models import Agenda, Local, Opcoes
 
-# Register your models here.
+@admin.register(Agenda)
+class AgendaAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'telefone', 'email', 'local', 'opcao', 'horario')
+
+@admin.register(Local)
+class LocalAdmin(admin.ModelAdmin):
+    list_display = ('cidade', 'endereco', 'bairro', 'telefone', 'numeracao', 'mapa_link', 'logradouro')
+
+@admin.register(Opcoes)
+class OpcoesAdmin(admin.ModelAdmin):
+    list_display = ('opcoes', 'valor')

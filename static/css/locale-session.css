@@ -1,0 +1,96 @@
+#section-unidades{
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enderecos-title{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+.enderecos-title p{
+    color: #d9a156;
+    font-size: 30px;
+    text-align: center;
+}
+
+.enderecos-title hr{
+    margin: 2rem 0rem 1rem 0rem;
+    width: 100%;
+    border: 1px solid #d9a156;
+    max-width: 19rem;
+}
+
+.enderecos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 330px;
+    min-height: 27rem;
+    margin: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -14px 20px 43px #24252a96;
+    border: 3px solid #6b6b6b;
+}
+
+.card-head{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-body{
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #363636;
+    border-top: 3px solid #6b6b6b;
+}
+
+.card-body p{
+    color: #6b6b6b;
+    text-align: center;
+}
+
+.map{
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+.card-estado{
+    font-size: 15px;
+    margin: 5px 10px ;
+    font-weight: 600;
+}
+
+.button-unidade{
+    background: none;
+    border: 2px solid #6b6b6b;
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    max-width: 200px;
+    margin: 14px;
+    cursor: pointer;
+    color: #515151;
+    transition: 0.5s;
+}
+
+.button-unidade:hover{
+    background-color: #6b6b6b;
+    color: rgb(233, 233, 233);
+}

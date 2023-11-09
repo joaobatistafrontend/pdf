@@ -1,0 +1,114 @@
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 72rem;
+    justify-content: space-between;
+    min-height: 30rem;
+}
+
+.footer-content img{
+    width: 100%;
+    max-width: 12rem;
+    height: auto;
+}
+
+.footer-img{
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+.footer-contatos{
+    display: flex;
+    flex-direction: column;
+    min-height: 12rem;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 46rem;
+    align-items: center;
+}
+
+.footer-contatos-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 9rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 94%;
+}
+
+.footer-contatos-text h2{
+    font-size: 28px;
+    color: #f1ae55;
+}
+
+.footer-contatos svg{
+    height: auto;
+    width: 100%;
+    max-width: 56px;
+    fill: #f1ae55;
+}
+
+.footer-contatos-content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 45rem;
+    justify-content: space-around;
+}
+
+.footer-contato-email, .footer-contato-whatsapp{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    min-height: 8rem;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 18px;
+    border: 3px solid #f1ae55;
+    max-width: 18rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.footer-contato-email:hover, .footer-contato-whatsapp:hover{
+    border: 5px solid #f1ae55;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform:scale(1.08);
+    transform:scale(1.08);
+}
+
+.footer-contato-email a, .footer-contato-whatsapp a{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contato-email p, .footer-contato-whatsapp p{
+    margin: 0rem 1rem;
+    color: #f1ae55;
+}
+
+.footer-copyright{
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #f1ae55;
+    width: 100%;
+    max-width: 72rem;
+    justify-content: center;
+    color: #fff;
+    border-radius: 18px 18px 0px 0px;
+}

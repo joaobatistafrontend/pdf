@@ -1,0 +1,355 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about-us-session.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/general.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/locale-session.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/policy-certificate-session.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsivity.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/scheduling-session.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/service-session.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/start-session.css' %}">
+
+    <title>TecPlac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="inicio">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="{% static 'img/brasao-transparente.png' %}" alt="">
+            </div>
+            <div class="mobile-menu-icon">
+                <button class="icon"></button>
+            </div>
+            
+            <ul class="nav-list">
+                <li class="nav-item"><a onclick="changeTo('section-initial')" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a onclick="changeTo('section-sobrenos')" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a onclick="changeTo('section-servicos')" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a onclick="changeTo('section-politica-certificados')" class="nav-link">Política e Certificados</a></li>
+                <li class="nav-item"><a onclick="changeTo('section-unidades')" class="nav-link">Nossas unidades</a></li>
+                <li class="nav-item"><a onclick="changeTo('section-agendamento')" class="nav-link">Agendamento</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main class="main-wrapper">
+
+        <!-- =================
+            Content Start
+        =============================================================================== -->
+        <div class="content-page pull-right">
+
+            <!-- =================
+                Section Intro Start
+            =============================================================================== -->
+            <section id="section-initial">
+                <div class="background-intial-div">
+                    <div class="gradient-background-div">
+                        <div class="container">
+                            <div class="container-text">
+                                <strong><h1>TecPlac</h1></strong>
+                                <hr>
+                                <p>
+                                    Somos uma empresa especializada na fabricação e comercialização de placas para veículos
+                                    automotores.
+                                </p>
+                                <div class="placa-carro">
+                                    <img src="{% static 'img/placa-img.png' %}" alt="Descrição da imagem">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Intro End -->
+
+            <!-- =================
+                Section About Start
+            =============================================================================== -->
+            <section id="section-sobrenos">
+                <div class="sobrenos-div">
+                    <div class="sobrenos-content">
+                        <div class="sobrenos-content-text">
+                            <strong><h1>Sobre nós</h1></strong><br>
+                            <p>
+                                Com o surgimento da resolução 231 de 15 de março de 2007 do CONTRAN, surge oficialmente a 
+                                empresa TECPLAC INDÚSTRIA E COMÉRCIO DE PLACAS EM GERAL LTDA ME no final do ano de 2007, tendo 
+                                como atividades fins a fabricação e vendas de blanks e tarjetas de identificação veicular para 
+                                carros e motos no Estado do Ceará.
+                            </p><br>
+                            <p>
+                                A empresa atualmente atua no estado do Ceará, sediada no município de Fortaleza, com uma 
+                                unidade fabril, que industrializa o produto e distribui para toda a região e estados vizinhos.
+                            </p><br>
+                            <p>
+                                É uma empresa que tem como missão trabalhar prioritariamente visando atender da melhor forma 
+                                tanto seus clientes quanto seus parceiros, assim como valorizar a equipe que compõe seu 
+                                quadro de colaboradores.
+                            </p><br>
+                            <p>
+                                De modo a garantir o bem-estar dos funcionários e a satisfação dos clientes, a empresa trabalha 
+                                com as mais modernas tecnologias disponíveis para a área no mercado, sempre em busca da dinamização 
+                                de seus processos, do melhor atendimento aos recursos humanos que envolvem a atuação da empresa 
+                                e trabalhando conforme as normas legais.
+                            </p><br>
+                        </div>
+                        <div class="sobrenos-content-image">
+                            <img src="{% static 'img/iso9001.png' %}" alt="Descrição da imagem">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section About End -->
+
+            <!-- =================
+                Section Serviços Start
+            =============================================================================== -->
+            <section id="section-servicos">
+                <div class="servicos-div">
+                    <div class="servicos-content">
+                        <div class="servicos-content-carrousel">
+                            <!-- <div class="slider-wrapper">
+                                <div class="slider">
+                                    <img id="slide-1" src="assets/img/servico-img1.jpg" alt="Descrição da imagem">
+                                    <img id="slide-2" src="assets/img/servico-img2.jpg" alt="Descrição da imagem">
+                                    <img id="slide-3" src="assets/img/servico-img3.jpg" alt="Descrição da imagem">
+                                    <img id="slide-4" src="assets/img/servico-img4.jpg" alt="Descrição da imagem">
+                                    <img id="slide-5" src="assets/img/servico-img5.jpg" alt="Descrição da imagem">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide-1"></a>
+                                    <a href="#slide-2"></a>
+                                    <a href="#slide-3"></a>
+                                    <a href="#slide-4"></a>
+                                    <a href="#slide-5"></a>
+                                </div>
+                            </div> -->
+                            <div class="content">
+                                <div class="slides">
+                                    <input type="radio" name="slide" id="slide1" checked>
+                                    <input type="radio" name="slide" id="slide2">
+                                    <input type="radio" name="slide" id="slide3">
+                                    <input type="radio" name="slide" id="slide4">
+                                    <input type="radio" name="slide" id="slide5">
+    
+                                    <div class="slide s1">
+                                        <img src="{% static 'img/servico-img1.jpg' %}" alt="Descrição da imagem">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="{% static 'img/servico-img2.jpg' %}" alt="Descrição da imagem">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="{% static 'img/servico-img3.jpg' %}" alt="Descrição da imagem">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="{% static 'img/servico-img4.jpg' %}" alt="Descrição da imagem">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="{% static 'img/servico-img5.jpg' %}" alt="Descrição da imagem">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navigation">
+                                <label class="bar" for="slide1"></label>
+                                <label class="bar" for="slide2"></label>
+                                <label class="bar" for="slide3"></label>
+                                <label class="bar" for="slide4"></label>
+                                <label class="bar" for="slide5"></label>
+                            </div>
+                        </div>
+                        <div class="servicos-content-text">
+                            <strong><h1>Serviços</h1></strong><br>
+                            <p>
+                                A TecPlac é uma empresa especializada na produção e comercialização de placas automotivas. 
+                                Nosso compromisso inabalável é fornecer um <strong style="color: #d9a156">serviço excepcional
+                                </strong> e <strong strong style="color: #d9a156">atendimento de alta 
+                                qualidade</strong>, visando atender plenamente às suas necessidades.
+                            </p><br>
+                            <p>
+                                Confira algumas fotos da nossa fábrica.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="servicos-video">
+                        <p>Acompanhe a seguir um vídeo da nossa produção de placas.</p>
+                        <hr>
+                        <iframe class="youtube-video"
+                            frameborder="0"
+                            title="TecPlac - Produção de placas"
+                            src="https://www.youtube.com/embed/TuvP6LrRdj8"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Serviços End -->
+
+            <!-- =================
+                Section Politica de Qualidade Start
+            =============================================================================== -->
+            <section id="section-politica-certificados" >
+                <div class="politica-certificados-div">
+                    <div class="politica-certificados-content">
+                        <div class="politica-content">
+                            <strong><p>Política de qualidade</p></strong><br>
+                            <p>
+                                Fabricar e comercializar placas de identificação para veículos automotores, buscando 
+                                um crescimento no mercado regional, a satisfação de seus clientes e o desenvolvimento 
+                                de seus colaboradores, através da melhoria contínua e obedecendo as normas legais.
+                            </p>
+                        </div>
+                        <div class="certificados-content">
+                            <div class="certificados-box">
+                                <div class="certificados-text">
+                                    <strong><p>Certificados</p></strong><br>
+                                    <p>
+                                        Prezando pela qualidade dos nossos serviços, a Tecplac está sempre em busca de 
+                                        certificar os processos e o atendimento.
+                                    </p><br>
+                                    <div class="download-document">
+                                        <ul>
+                                            <li> <a href="{% static 'documents/iso-9001-tecplac.pdf' %}" target="_blank">Certificado ISO 9001</a> </li>
+                                            <li> <a href="{% static 'documents/certificado-abnt.pdf' %}" target="_blank">Certificado ABNT</a></li>
+                                        </ul><br>
+                                    </div>
+                                    <p>Resoluções: </p><br>
+                                    <div class="download-document">
+                                        <ul>
+                                            <li> <a href="{% static 'documents/resolucao-contran.pdf' %}" target="_blank">Resolução - CONTRAN- Nº 969</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="certificate-image">
+                                        <img src="{% static 'img/certificate-image.png' %}" alt="Descrição da imagem">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Poilitica de Qualidade End -->
+
+            <!-- =================
+                Section Certificados Start
+            =============================================================================== -->
+            <section id="section-unidades">
+                <div class="enderecos-title">
+                    <p>Conheça nossas unidades</p>
+                    <hr>
+                </div>
+                <div class="enderecos">
+                    {% for l in local %}
+                        <div class="card card-1">
+                                <div class="card-head">
+                                    <iframe class="map" src="{{ l.mapa_link }}" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-estado">{{ l.cidade }}</p>
+                                    <p class="rua">
+                                        {{ l.endereco }}
+                                    </p>
+                                    <p class="bairro">
+                                        {{ l.bairro }}
+                                    </p>
+                                    <p class="cep">
+                                        {{ l.numeracao }}
+                                    </p>
+                                    <button class="button-unidade">Realizar agendamento na unidade</button>
+                                </div>
+                            </div>
+                        {% endfor %}
+                </div>
+            </section>
+            <!-- Certificados End -->
+
+            <!-- =================
+                Fale Conosco Start
+            =============================================================================== -->
+            <section id="section-agendamento">
+                <div class="agendamento-div">
+                    <div class="agendamento-content">
+                        <div class="agendamento-text-content">
+                            <strong><p>Realize o seu agendamento</p></strong><br>
+                            <p>
+                                Faça agora o seu agendamento e dirija-se a uma de nossas lojas com o documento que 
+                                iremos mandar ao seu email.
+                            </p>
+                        </div>
+                        <div class="agendamento-form-content">
+                            <div class="agendamento-form-box">
+                                <div class="agendamento-form-text">
+                                    <img src="{% static 'img/brasao-transparente.png' %}" alt="Descrição da imagem">
+                                    <form method="post">
+                                        {% csrf_token %}
+                                        {{form.as_div}}
+                                        <div class="input-div">
+                                            <button class="btn btn1" type="submit">Enviar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Atendimento End -->
+        </div>
+         <!-- Content End -->
+
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <div class="footer-content">
+                <div class="footer-img">
+                    <img src="{% static 'img/brasao-transparente.png' %}" alt="">
+                </div>
+                <div class="footer-contatos">
+                    <div class="footer-contatos-text">
+                        <h2>Precisa entrar em contato conosco? </h2>
+                        <p>Confira logo abaixo nossos canais de comunicação</p>
+                    </div>
+                    <div class="footer-contatos-content">
+                        <div class="footer-contato-email">
+                            <a href="mailto:contato@tecplac.com.br" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                                </svg>
+                            </a>
+                            <p>contato@tecplac.com.br</p>
+                            
+                        </div>
+                        <div class="footer-contato-whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=5585996892423&text=Ol%C3%A1%2C%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20placas" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                                </svg>
+                            </a>
+                            <p>(85) 99689-2423</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                Copyright © 2023 TecPlac
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

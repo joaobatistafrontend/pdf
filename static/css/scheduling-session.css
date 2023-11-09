@@ -1,0 +1,150 @@
+.agendamento-div{
+    background-color: #f1ae55;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.agendamento-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 74rem;
+    align-items: center;
+}
+
+.agendamento-text-content{
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0rem;
+    width: 90%;
+}
+
+.agendamento-text-content p, strong{
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.agendamento-text-content strong{
+    font-size: 24px;
+}
+
+.agendamento-form-content{
+    background-image: url(../img/transito-2-borrado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40rem;
+    padding: 2rem 0rem;
+}
+
+.agendamento-form-box{
+    border-radius: 24px;
+    width: 90%;
+    max-width: 28rem;
+    min-height: 24rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 2rem 0rem;
+    border: 2px solid #fff;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 2px 10px #000000;
+}
+
+.agendamento-form-text{
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.agendamento-form-text img{
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+}
+
+.agendamento-form-text strong{
+    font-size: 24px;
+    color: #454545;
+}
+
+.agendamento-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 0px;
+    max-width: 22rem;
+}
+
+.input-div input, select{
+    width: 100%;
+    height: 32px;
+    padding-left: 10px;
+    border-radius: 16px;
+    border: none;
+}
+
+.btn{
+    background: none;
+    border: 2px solid #323232;
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    color: #ffffff;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #323232;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn1::before{
+    transform: scaleX(0);
+}
+
+.btn2::before{
+    transform: scaleY(0);
+}
+
+.btn1:hover::before{
+    transform: scaleX(1);
+}
+
+.btn2:hover::before{
+    transform: scaleY(1);
+}
