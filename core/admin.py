@@ -3,7 +3,7 @@ from .models import Agenda, Local, Opcoes
 
 @admin.register(Agenda)
 class AgendaAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'telefone', 'email', 'local', 'opcao', 'horario')
+    list_display = ('nome', 'telefone', 'email', 'locais', 'produtos', 'horario')
 
 @admin.register(Local)
 class LocalAdmin(admin.ModelAdmin):

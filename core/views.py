@@ -1,8 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import TemplateView,CreateView,View,ListView,UpdateView,DeleteView
 from .models import Agenda, Local
 from .forms import AgendaForm
-
 class Index(View):
      def get(self, request):
           local = Local.objects.all()
@@ -14,7 +13,7 @@ class Index(View):
           if form.is_valid():
                agendamento = form.save()
                agendamento.send_email()
-               form = AgendaForm()
+               return redirect('index')
           else:
                form = AgendaForm()
           context = {

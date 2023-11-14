@@ -29,7 +29,7 @@ class Opcoes(models.Model):
     valor = models.DecimalField(max_digits=10, decimal_places=2)
 
     def __str__(self):
-        return f"{self.opcoes} - {self.valor}"
+        return f"{self.opcoes} - R$ {self.valor}"
      
 def gerar_protocolo():
     while True:
@@ -41,8 +41,8 @@ class Agenda(models.Model):
     nome = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
     telefone = models.CharField(max_length=30, null=True, blank=True)
-    local = models.ForeignKey(Local, on_delete=models.CASCADE)
-    opcao = models.ForeignKey(Opcoes, on_delete=models.CASCADE)
+    locais = models.ForeignKey(Local, on_delete=models.CASCADE)
+    produtos = models.ForeignKey(Opcoes, on_delete=models.CASCADE)
     horario = models.CharField(
         max_length=5,
         choices=[
@@ -57,8 +57,9 @@ class Agenda(models.Model):
         nome = self.nome
         telefone = self.telefone
         email = self.email
-        opcoes = self.opcao
-        local = f"{self.local}"
+        produto = self.produtos
+        local = f"{self.locais}"
+        horario = self.horario
         data = self.data
         protocolo = self.protocolo
         assunto = 'Comprovante de Agendamento'
@@ -83,8 +84,9 @@ class Agenda(models.Model):
             ['Nome:', nome],
             ['Telefone', telefone],
             ['Email:', email],
-            ['Opções de Agendamento:', opcoes],
+            ['Produto:', produto],
             ['Local:', Paragraph(local, styles['Normal'])],  # Utilize o estilo 'Normal' para quebrar a linha
+            ['Horario', horario],
             ['Data de Agendamento:', data],
             ['Gerar Prrotocolo', protocolo]
         ]
