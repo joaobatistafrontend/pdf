@@ -1,8 +1,13 @@
 from django import forms
 from .models import Agenda
+from django.utils.safestring import SafeString
 
 
 class AgendaForm(forms.ModelForm):
+    # Função que coloca uma classe nas divs dos inputs
+    def as_div(self):
+        return SafeString(super().as_div().replace("<div>", "<div class='input-div'>"))
+    
     data = forms.DateField(
         widget=forms.DateInput(attrs={'type': 'date', 'placeholder': '', 'class': 'form-data'}),
         label=''

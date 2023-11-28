@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -18,15 +19,35 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/service-session.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/start-session.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/agendamento.css' %}">
-
-
+    
     <title>TecPlac</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind&family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    {% if messages %}
+    {% for message in messages %}
+    <center>
+        <div id="custom-alert" class="alert custom-alert alert-dismissible fade show" role="alert">
+            <strong>EII!</strong> {{ message }}
+        </div>
+    </center>
+        <script>
+            // Adiciona um atraso de 7 segundos e, em seguida, fecha a mensagem de alerta
+            setTimeout(function() {
+                var alert = document.getElementById('custom-alert');
+                if (alert) {
+                    alert.classList.remove('show');
+                    alert.style.display = 'none';
+                }
+            }, 4000);
+        </script>
+    {% endfor %}
+{% endif %}
+
     <header id="inicio">
         <nav class="nav-bar">
             <div class="logo">
@@ -44,27 +65,29 @@
                 <li class="nav-item"><a onclick="changeTo('section-unidades')" class="nav-link">Nossas unidades</a></li>
                 <li class="nav-item"><a onclick="changeTo('section-agendamento')" class="nav-link">Agendamento</a></li>
             </ul>
-        </nav>        
+        </nav>
+        
+        
+        
     </header>
-
     <main class="main-wrapper">
 
         <!-- =================
             Content Start
-        =============================================================================== -->
-        <div class="content-page pull-right">
-
-            <!-- =================
-                Section Intro Start
             =============================================================================== -->
-            <section id="section-initial">
-                <div class="background-intial-div">
-                    <div class="gradient-background-div">
-                        <div class="container">
-                            <div class="container-text">
-                                <strong><h1>TecPlac</h1></strong>
-                                <hr>
-                                <p>
+            <div class="content-page pull-right">
+                
+                <!-- =================
+                    Section Intro Start
+                    =============================================================================== -->
+                    <section id="section-initial">
+                        <div class="background-intial-div">
+                            <div class="gradient-background-div">
+                                <div class="container">
+                                    <div class="container-text">
+                                        <strong><h1>TecPlac</h1></strong>
+                                        <hr>
+                                        <p>
                                     Somos uma empresa especializada na fabricação e comercialização de placas para veículos
                                     automotores.
                                 </p>
@@ -352,6 +375,7 @@
     </footer>
 
     <script defer src="{% static 'js/script.js' %}"></script>
+    
 </body>
 
 </html>

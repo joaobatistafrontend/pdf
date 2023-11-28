@@ -17,3 +17,29 @@
      margin-top: 10px;
      border-radius: 25px;
 }
+.custom-alert {
+     position: relative;
+     padding: 1rem 1.25rem;
+     margin-bottom: 1rem;
+     border: 1px solid transparent;
+     border-radius: 0.25rem;
+     color: #856404;
+     background-color: #56f260; /* Cor de fundo amarela do Bootstrap para alertas de aviso */
+     border-color: #ffeeba; /* Cor da borda */
+     color: black;
+ }
+ 
+ .custom-alert strong {
+     font-weight: bold;
+     color: red;
+ }
+ 
+ .custom-alert .btn-close {
+     position: absolute;
+     top: 0;
+     right: 0;
+     padding: 1rem 1.25rem;
+     color: inherit;
+ }
+ 
+ 

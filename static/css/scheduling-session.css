@@ -103,6 +103,11 @@
     padding-left: 10px;
     border-radius: 16px;
     border: none;
+    color: #757575;
+}
+
+.input-div select{
+    cursor: pointer;
 }
 
 .btn{

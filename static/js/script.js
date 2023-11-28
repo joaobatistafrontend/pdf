@@ -36,8 +36,11 @@ buttons.forEach(function(button) {
     
     let rua = divPai.querySelector(".rua").textContent.trim();
     let estado = divPai.querySelector(".card-estado").textContent.trim();
+    let numero = divPai.querySelector(".numero").textContent.trim();
 
-    let endereco = rua + " - " + estado;
+    let endereco = estado + " - " + rua + " - " + numero;
+
+    console.log(endereco)
 
     selectEnderecoValue(endereco);
     changeTo("section-agendamento");
@@ -45,10 +48,10 @@ buttons.forEach(function(button) {
 });
 
 function selectEnderecoValue(value){
-    var select = document.getElementById("unidades-select");
+    var select = document.getElementById("id_locais");
 
     for (let i = 0; i < select.options.length; i++) {
-        if (select.options[i].value === value) {
+        if (select.options[i].text  === value) {
             select.options[i].selected = true;
             break;
         }
